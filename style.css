@@ -16,8 +16,9 @@ nav {
 }
 
 .nav-left {
-    display: flex;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .logo {
@@ -220,8 +221,8 @@ section {
 /* Tagline styling */
 .tagline {
   color: #d4af37;        /* gold color */
-  font-size: 16px;
-  margin-top: 8px;
+  font-size: 14px;
+  margin-top: 4px;
   letter-spacing: 1px;
 }
 /* WhatsApp Floating Button */
@@ -245,6 +246,7 @@ section {
 .whatsapp-float:hover {
   background-color: #1ebe5d;
 }
+
 
 
 
