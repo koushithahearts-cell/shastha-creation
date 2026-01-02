@@ -155,6 +155,70 @@ section {
         width: 90%;
     }
 }
+/* =========================
+   MOBILE RESPONSIVE FIX
+   ========================= */
+
+@media (max-width: 768px) {
+
+  body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+  /* Navbar */
+  nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  /* Hero / Main section */
+  .hero,
+  .about,
+  .services,
+  .gallery,
+  .contact {
+    padding: 20px;
+    text-align: center;
+  }
+
+  /* Gallery images */
+  .gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .gallery img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Contact form */
+  .contact-form {
+    width: 100%;
+  }
+
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form button {
+    width: 100%;
+    font-size: 16px;
+  }
+
+}
+
+
 
 
 
