@@ -217,6 +217,15 @@ section {
   }
 
 }
+/* Tagline styling */
+.tagline {
+  color: #d4af37;        /* gold color */
+  font-size: 16px;
+  margin-top: 8px;
+  letter-spacing: 1px;
+}
+
+
 
 
 
