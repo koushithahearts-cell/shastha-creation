@@ -29,6 +29,12 @@ nav {
   align-items: center;
   gap: 10px;
 }
+/* Force brand name single line */
+.nav-left h1 {
+  white-space: nowrap;
+  margin: 0;
+  font-size: 22px;
+}
 
 .logo {
   width: 95px;  
@@ -323,6 +329,7 @@ section h2 {
     margin: 15px 0;
   }
 }
+
 
 
 
