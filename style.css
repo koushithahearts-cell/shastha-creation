@@ -265,6 +265,49 @@ section h2 {
     font-weight: 600;
   }
 }
+/* ===== SIMPLE MOBILE MENU FIX ===== */
+
+/* Hamburger icon */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #3A3A3A;
+}
+
+/* Desktop menu */
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav-menu {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: #FAF7F2;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 0;
+    z-index: 9999;
+  }
+
+  .nav-menu li {
+    margin: 15px 0;
+  }
+}
+
+
 
 
 
