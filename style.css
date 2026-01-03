@@ -359,6 +359,45 @@ section {
   justify-content: center;
   text-align: center;
 }
+/* HAMBURGER MENU */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  color: #6B8E23;
+  cursor: pointer;
+}
+
+/* MOBILE VIEW */
+@media (max-width: 768px) {
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    background-color: #000;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    width: 200px;
+    border: 1px solid #E5E0D8;
+    padding: 10px;
+    z-index: 1000;
+  }
+
+  .nav-menu.show {
+    display: flex;
+  }
+
+  .nav-menu li {
+    margin: 10px 0;
+    text-align: center;
+  }
+}
+
+
 
 
 
