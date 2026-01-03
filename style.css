@@ -381,6 +381,22 @@ section h2 {
 .contact-link:hover {
   text-decoration: underline;
 }
+#why-choose-us {
+  background-color: #FFFFFF;
+}
+
+.why-list {
+  max-width: 700px;
+  margin: 20px auto;
+  padding-left: 20px;
+}
+
+.why-list li {
+  margin: 10px 0;
+  font-size: 15px;
+}
+
+
 
 
 
