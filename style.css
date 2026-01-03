@@ -1,11 +1,19 @@
+/* =====================
+   GLOBAL STYLES
+===================== */
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #FAF7F2; /* cream background */
+  background-color: #FAF7F2; /* Soft cream */
   color: #3A3A3A;
+  overflow-x: hidden;
 }
 
-/* NAV BAR */
+/* =====================
+   NAVBAR
+===================== */
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -13,17 +21,7 @@ nav {
   padding: 15px 30px;
   background-color: #FFFFFF;
   border-bottom: 1px solid #E5E0D8;
-}
-/* NAV MENU LINKS */
-.nav-menu a {
-  color: #3A3A3A;
-  text-decoration: none;
-  font-weight: 500;
-  margin-left: 20px;
-}
-
-.nav-menu a:hover {
-  color: #6B8E23;
+  position: relative;
 }
 
 .nav-left {
@@ -33,238 +31,67 @@ nav {
 }
 
 .logo {
-    width: 80px;
-    height: auto;
-    margin-right: 15px;
-    background-color: white;
-    padding: 5px;
-    border-radius: 6px;
-    display: block;
+  width: 80px;
+  height: auto;
+  margin-bottom: 5px;
 }
 
 nav h1 {
-    font-size: 22px;
+  font-size: 22px;
+  margin: 0;
 }
 
-/* MENU */
+.tagline {
+  font-size: 14px;
+  color: #6B8E23;
+  letter-spacing: 1px;
+}
+
+/* =====================
+   NAV MENU
+===================== */
+
 .nav-menu {
-    list-style: none;
-    display: flex;
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-menu li {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 .nav-menu a {
-    text-decoration: none;
-    color: #d4af37;
-    font-weight: bold;
+  text-decoration: none;
+  color: #3A3A3A;
+  font-weight: 600;
 }
 
 .nav-menu a:hover {
-    color: white;
+  color: #6B8E23;
 }
 
-/* SECTIONS */
-section {
-    padding: 60px 30px;
-    border-bottom: 1px solid #333;
-}
+/* =====================
+   HAMBURGER ICON
+===================== */
 
-.hero {
-    text-align: center;
-}
-/* ===== GALLERY SECTION ===== */
-
-#gallery h2 {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
-    padding: 0 20px;
-}
-
-.gallery img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 10px;
-    border: 2px solid #d4af37;
-    transition: transform 0.3s ease;
-}
-
-.gallery img:hover {
-    transform: scale(1.05);
-}
-/* CONTACT FORM */
-.contact-form {
-    max-width: 500px;
-    margin: 20px auto;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.contact-form input,
-.contact-form textarea {
-    padding: 10px;
-    border-radius: 6px;
-    border: none;
-    outline: none;
-    font-size: 14px;
-}
-
-.contact-form button {
-    background-color: #d4af37;
-    color: black;
-    padding: 12px;
-    border: none;
-    border-radius: 6px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.contact-form button:hover {
-    background-color: white;
-}
-/* =========================
-   RESPONSIVE DESIGN
-   ========================= */
-@media (max-width: 768px) {
-
-    /* NAV BAR */
-    nav {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .nav-left {
-        margin-bottom: 10px;
-    }
-
-    .nav-menu {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    /* HERO SECTION */
-    .hero h2 {
-        font-size: 22px;
-    }
-
-    /* GALLERY */
-    .gallery img {
-        height: 180px;
-    }
-
-    /* CONTACT FORM */
-    .contact-form {
-        width: 90%;
-    }
-}
-/* =========================
-   MOBILE RESPONSIVE FIX
-   ========================= */
-
-@media (max-width: 768px) {
-
-  body {
-    padding: 0;
-    margin: 0;
-    overflow-x: hidden;
-  }
-
-  /* Navbar */
-  nav {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  nav ul {
-    flex-direction: column;
-    padding: 0;
-  }
-
-  nav ul li {
-    margin: 10px 0;
-  }
-
-  /* Hero / Main section */
-  .hero,
-  .about,
-  .services,
-  .gallery,
-  .contact {
-    padding: 20px;
-    text-align: center;
-  }
-
-  /* Gallery images */
-  .gallery {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 15px;
-  }
-
-  .gallery img {
-    width: 100%;
-    height: auto;
-  }
-
-  /* Contact form */
-  .contact-form {
-    width: 100%;
-  }
-
-  .contact-form input,
-  .contact-form textarea,
-  .contact-form button {
-    width: 100%;
-    font-size: 16px;
-  }
-
-}
-/* Tagline styling */
-.tagline {
-  color: #d4af37;        /* gold color */
-  font-size: 14px;
-  margin-top: 4px;
-  letter-spacing: 1px;
-}
-/* WhatsApp Floating Button */
-.whatsapp-float {
-  position: fixed;
-  width: 55px;
-  height: 55px;
-  bottom: 20px;
-  right: 20px;
-  background-color: #25D366;
-  color: white;
-  border-radius: 50%;
-  text-align: center;
+.menu-toggle {
+  display: none;
   font-size: 28px;
-  line-height: 55px;
-  text-decoration: none;
-  box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
-  z-index: 1000;
+  cursor: pointer;
+  color: #6B8E23;
 }
 
-.whatsapp-float:hover {
-  background-color: #1ebe5d;
-}
-/* ===== HOME HERO SECTION ===== */
+/* =====================
+   HERO / HOME SECTION
+===================== */
+
 .hero {
   min-height: 85vh;
-  background: linear-gradient(
-      rgba(0, 0, 0, 0.7),
-      rgba(0, 0, 0, 0.7)
-    ),
-    url("home-bg.jpg");
+  background:
+    linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+    url("images/home-bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -275,100 +102,142 @@ section {
   text-align: center;
   padding: 40px 20px;
 }
-@media (max-width: 768px) {
-  .hero {
-    min-height: 70vh;
-    background-position: center top;
-  }
-}
 
 .hero-content h2 {
-  font-size: 34px;
+  font-size: 36px;
   color: #d4af37;
   margin-bottom: 12px;
-  letter-spacing: 1px;
 }
 
 .hero-tagline {
   font-size: 16px;
-  color: #ffffff;
+  color: #FFFFFF;
   margin-bottom: 25px;
-  opacity: 0.9;
 }
 
 .hero-btn {
   display: inline-block;
   padding: 14px 28px;
-  background-color: #d4af37;
-  color: #000 !important;
+  background-color: #6B8E23;
+  color: #FFFFFF;
   text-decoration: none;
   font-weight: bold;
   border-radius: 40px;
+}
+
+.hero-btn:hover {
+  background-color: #58751c;
+}
+
+/* =====================
+   SECTIONS
+===================== */
+
+section {
+  padding: 60px 30px;
+  border-bottom: 1px solid #E5E0D8;
+}
+
+section h2 {
+  color: #6B8E23;
+}
+
+/* =====================
+   SERVICES
+===================== */
+
+#services ul {
+  padding-left: 20px;
+}
+
+/* =====================
+   GALLERY
+===================== */
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid #E5E0D8;
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* =====================
+   CONTACT FORM
+===================== */
+
+.contact-form {
+  max-width: 500px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #E5E0D8;
   font-size: 14px;
 }
-/* ===== MOBILE MENU ===== */
 
-.menu-toggle {
-  display: none;
-  font-size: 28px;
+.contact-form button {
+  background-color: #6B8E23;
+  color: #FFFFFF;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
   cursor: pointer;
-  color: #6B8E23;
 }
 
-/* Mobile view */
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-  }
-
-  .nav-menu {
-    display: none;
-    position: absolute;
-    top: 70px;
-    right: 20px;
-    background: #FAF7F2;
-    border-radius: 8px;
-    padding: 10px 0;
-    width: 160px;
-  }
-
-  .nav-menu li {
-    display: block;
-    text-align: center;
-    margin: 10px 0;
-  }
-
-  .nav-menu li a {
-    color: #3A3A3A;
-    font-weight: 600;
-  }
-
-  .nav-menu.show {
-    display: block;
-  }
+.contact-form button:hover {
+  background-color: #58751c;
 }
-#home {
-  background: 
-    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
-    url("url("images/home-bg.jpg");
-  background-size: cover;
-  background-position: center;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+/* =====================
+   WHATSAPP BUTTON
+===================== */
+
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  border-radius: 50%;
   text-align: center;
-}
-/* HAMBURGER MENU */
-.menu-toggle {
-  display: none;
-  font-size: 28px;
-  color: #6B8E23;
-  cursor: pointer;
+  font-size: 30px;
+  line-height: 60px;
+  text-decoration: none;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+  z-index: 2000;
 }
 
-/* MOBILE VIEW */
+/* =====================
+   MOBILE RESPONSIVE
+===================== */
+
 @media (max-width: 768px) {
+
+  nav {
+    flex-direction: row;
+  }
 
   .menu-toggle {
     display: block;
@@ -376,26 +245,36 @@ section {
 
   .nav-menu {
     display: none;
-    flex-direction: column;
-    background-color: #000;
     position: absolute;
     top: 70px;
-    right: 20px;
-    width: 200px;
-    border: 1px solid #E5E0D8;
-    padding: 10px;
-    z-index: 1000;
+    right: 15px;
+    background: #FAF7F2;
+    width: 180px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    padding: 10px 0;
+    flex-direction: column;
+    z-index: 3000;
   }
 
   .nav-menu.show {
-    display: flex;
+    display: block;
   }
 
   .nav-menu li {
-    margin: 10px 0;
+    margin: 12px 0;
     text-align: center;
   }
+
+  .hero {
+    min-height: 70vh;
+  }
+
+  .hero-content h2 {
+    font-size: 26px;
+  }
 }
+
 
 
 
