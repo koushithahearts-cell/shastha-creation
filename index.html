@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Shastha Creation | Interior Design</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Shastha Creation | Interior Design</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- ===== NAVIGATION BAR ===== -->
+<!-- ===== NAVBAR ===== -->
 <nav>
   <div class="nav-left">
     <img src="logo.png" alt="Shastha Creation Logo" class="logo">
@@ -18,26 +19,24 @@
     </div>
   </div>
 
-  <!-- Hamburger icon -->
-  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  <!-- Hamburger -->
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
 
   <!-- Menu -->
   <ul class="nav-menu" id="navMenu">
-    <li><a href="#home">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#services">Services</a></li>
-    <li><a href="#gallery">Gallery</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+    <li><a href="#services" onclick="toggleMenu()">Services</a></li>
+    <li><a href="#gallery" onclick="toggleMenu()">Gallery</a></li>
+    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
   </ul>
-    <div class="hamburger" onclick="toggleMenu()">
-  <span></span>
-  <span></span>
-  <span></span>
-</div>
-
 </nav>
 
-<!-- ===== HOME / HERO SECTION ===== -->
+<!-- ===== HERO SECTION ===== -->
 <section id="home">
   <div class="hero-content">
     <h1>Designing Elegant Interiors</h1>
@@ -46,77 +45,66 @@
   </div>
 </section>
 
-<!-- ===== ABOUT SECTION ===== -->
+<!-- ===== ABOUT ===== -->
 <section id="about">
-    <h2>About Us</h2>
-    <p>
-        Shastha Creation is a Bangalore-based interior design brand
-        delivering elegant, modern and functional spaces.
-    </p>
+  <h2>About Us</h2>
+  <p>
+    Shastha Creation is a Bangalore-based interior design brand delivering
+    elegant, modern and functional interior solutions for homes and offices.
+  </p>
 </section>
 
-<!-- ===== SERVICES SECTION ===== -->
+<!-- ===== SERVICES ===== -->
 <section id="services">
-    <h2>Our Services</h2>
-    <ul>
-        <li>Home Interior Design</li>
-        <li>Office Interior Design</li>
-        <li>Modular Kitchen</li>
-        <li>False Ceiling & Lighting</li>
-    </ul>
+  <h2>Our Services</h2>
+  <ul>
+    <li>Home Interior Design</li>
+    <li>Office Interior Design</li>
+    <li>Modular Kitchen</li>
+    <li>False Ceiling & Lighting</li>
+  </ul>
 </section>
 
-<!-- ===== GALLERY SECTION ===== -->
+<!-- ===== GALLERY ===== -->
 <section id="gallery">
-    <h2>Our Gallery</h2>
-
-    <div class="gallery">
-        <img src="gallery1.jpg" alt="Interior Work 1">
-        <img src="gallery2.jpg" alt="Interior Work 2">
-        <img src="gallery3.jpg" alt="Interior Work 3">
-        <img src="gallery4.jpg" alt="Interior Work 4">
-    </div>
+  <h2>Our Gallery</h2>
+  <div class="gallery">
+    <img src="gallery1.jpg">
+    <img src="gallery2.jpg">
+    <img src="gallery3.jpg">
+    <img src="gallery4.jpg">
+  </div>
 </section>
 
-<!-- ===== CONTACT SECTION ===== -->
+<!-- ===== CONTACT ===== -->
 <section id="contact">
-    <h2>Contact Us</h2>
+  <h2>Contact Us</h2>
 
-    <form class="contact-form">
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <input type="tel" placeholder="Your Phone Number" required>
+  <form class="contact-form">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <input type="tel" placeholder="Your Phone Number" required>
+    <textarea placeholder="Tell us about your interior requirement"></textarea>
+    <button type="submit">Send Message</button>
+  </form>
 
-
-        <textarea placeholder="Tell us about your interior requirement"></textarea>
-
-
-        <button type="submit">Send Message now</button>
-    </form>
-
-    <p class="contact-info">📍 Bangalore, India</p>
-<p class="contact-info">
-    📧 <a href="mailto:vinoj.hearts@gmail.com">vinoj.hearts@gmail.com@gmail.com</a>
-</p>
-
-<p class="contact-info">
-    📞 <a href="tel:+919538011336">+91 95380 11336</a>
-</p>
-
-
+  <p>📍 Bangalore, India</p>
+  <p>📞 <a href="tel:+919538011336">+91 95380 11336</a></p>
 </section>
-    <!-- WhatsApp Floating Button -->
-<a href="https://wa.me/919538011336" class="whatsapp-float" target="_blank">
-  💬
-</a>
+
+<!-- WhatsApp -->
+<a href="https://wa.me/919538011336" class="whatsapp-float">💬</a>
+
 <script>
   function toggleMenu() {
-    document.querySelector('.nav-menu').classList.toggle('show');
+    document.getElementById("navMenu").classList.toggle("active");
   }
 </script>
 
 </body>
 </html>
+
+
 
 
 
