@@ -1,7 +1,7 @@
 body {
   margin: 0;
-  font-family: "Poppins", Arial, sans-serif;
-  background-color: #FAF7F2;
+  font-family: Arial, sans-serif;
+  background-color: #FAF7F2; /* cream background */
   color: #3A3A3A;
 }
 
@@ -347,6 +347,20 @@ section {
     display: block;
   }
 }
+#home {
+  background: 
+    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+    url("url("images/home-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
 
 
 
