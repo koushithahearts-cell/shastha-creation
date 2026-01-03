@@ -293,6 +293,47 @@ section h2 {
   position: relative;
   z-index: 1;
 }
+/* ===== HOME SECTION VISIBILITY FIX ===== */
+
+#home {
+  position: relative;
+  color: #ffffff;
+}
+
+#home h1,
+#home h2,
+#home p {
+  color: #ffffff;
+}
+
+/* Dark overlay for readability */
+#home::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 1;
+}
+
+#home * {
+  position: relative;
+  z-index: 2;
+}
+#home .btn,
+#home button {
+  background-color: #3A3A3A; /* dark grey */
+  color: #ffffff;
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 25px;
+  border: none;
+}
+
+#home .btn:hover {
+  background-color: #6B8E23; /* olive green */
+}
+
+
 
 
 
