@@ -10,23 +10,25 @@
 
 <!-- ===== NAVIGATION BAR ===== -->
 <nav>
-    <div class="nav-left">
-        <img src="logo.png" alt="Shastha Creation Logo" class="logo">
-        <h1>SHASTHA CREATION</h1>
-        <p class="tagline">Makes Your Dream Comes True</p>
-
+  <div class="nav-left">
+    <img src="logo.png" alt="Shastha Creation Logo" class="logo">
+    <div>
+      <h1>SHASTHA CREATION</h1>
+      <p class="tagline">Makes Your Dream Comes True</p>
     </div>
+  </div>
 
-    <ul class="nav-menu">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-    <div class="menu-toggle" onclick="toggleMenu()">
-  ☰
-</div>
+  <!-- Hamburger icon -->
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+  <!-- Menu -->
+  <ul class="nav-menu" id="navMenu">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
 </nav>
 
 <!-- ===== HOME SECTION ===== -->
@@ -110,9 +112,9 @@ function toggleMenu() {
   document.getElementById("navMenu").classList.toggle("show");
 }
 </script>
-
 </body>
 </html>
+
 
 
 
