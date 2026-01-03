@@ -12,48 +12,55 @@ body {
 /* =====================
    NAVBAR
 ===================== */
+/* =====================
+   NAVBAR
+===================== */
+
 nav {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 15px 25px;
-  background-color: #FFFFFF;
+  justify-content: space-between;
+  padding: 14px 20px;
+  background-color: #ffffff;
   border-bottom: 1px solid #E5E0D8;
-  position: sticky;
-  top: 0;
-  z-index: 5000; /* VERY IMPORTANT */
 }
 
+/* Left side: logo + text */
 .nav-left {
   display: flex;
   align-items: center;
-  gap: 10px;
-}
-/* Force brand name single line */
-.nav-left h1 {
-  white-space: nowrap;
-  margin: 0;
-  font-size: 22px;
+  gap: 12px;
 }
 
+/* Logo */
 .logo {
-  width: 110px;  
+  width: 80px;
   height: auto;
 }
 
-nav h1 {
+/* Brand text */
+.brand-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-text h1 {
   margin: 0;
-  font-size: 20px;
+  font-size: 22px;
+  white-space: nowrap;
+  color: #3A3A3A;
 }
 
 .tagline {
-  font-size: 13px;
+  margin: 2px 0 0;
+  font-size: 14px;
   color: #6B8E23;
 }
 
 /* =====================
-   NAV MENU (DESKTOP)
+   MENU
 ===================== */
+
 .nav-menu {
   list-style: none;
   display: flex;
@@ -62,32 +69,63 @@ nav h1 {
   padding: 0;
 }
 
-.nav-menu li a {
+.nav-menu a {
   text-decoration: none;
   color: #3A3A3A;
   font-weight: 600;
 }
 
-.nav-menu li a:hover {
-  color: #6B8E23;
+/* =====================
+   HAMBURGER
+===================== */
+
+.menu-toggle {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: #3A3A3A;
 }
 
 /* =====================
-   HAMBURGER ICON
+   MOBILE VIEW
 ===================== */
-.hamburger {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-  z-index: 7000;
-}
 
-.hamburger span {
-  width: 25px;
-  height: 3px;
-  background: #3A3A3A;
-  margin: 4px 0;
-  border-radius: 2px;
+@media (max-width: 768px) {
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-menu {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 15px;
+    background: #FAF7F2;
+    flex-direction: column;
+    width: 180px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    z-index: 1000;
+  }
+
+  .nav-menu.show {
+    display: flex;
+  }
+
+  .nav-menu li {
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .logo {
+    width: 70px;
+  }
+
+  .brand-text h1 {
+    font-size: 18px;
+  }
 }
 
 /* =====================
@@ -328,6 +366,7 @@ section h2 {
     margin: 15px 0;
   }
 }
+
 
 
 
