@@ -306,6 +306,49 @@ section {
   border-radius: 40px;
   font-size: 14px;
 }
+/* ===== MOBILE MENU ===== */
+
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #6B8E23;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-menu {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background: #FAF7F2;
+    border-radius: 8px;
+    padding: 10px 0;
+    width: 160px;
+  }
+
+  .nav-menu li {
+    display: block;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .nav-menu li a {
+    color: #3A3A3A;
+    font-weight: 600;
+  }
+
+  .nav-menu.show {
+    display: block;
+  }
+}
+
+
 
 
 
