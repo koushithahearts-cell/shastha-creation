@@ -366,6 +366,23 @@ section h2 {
     margin: 15px 0;
   }
 }
+.contact-info {
+  font-size: 16px;
+  margin: 10px 0;
+  color: #3A3A3A;
+}
+
+.contact-link {
+  color: #6B8E23;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+}
+
+
 
 
 
