@@ -29,6 +29,12 @@
     <li><a href="#gallery">Gallery</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
+    <div class="hamburger" onclick="toggleMenu()">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
 </nav>
 
 <!-- ===== HOME / HERO SECTION ===== -->
@@ -104,12 +110,14 @@
   💬
 </a>
 <script>
-function toggleMenu() {
-  document.getElementById("navMenu").classList.toggle("show");
-}
+  function toggleMenu() {
+    document.querySelector('.nav-menu').classList.toggle('show');
+  }
 </script>
+
 </body>
 </html>
+
 
 
 
