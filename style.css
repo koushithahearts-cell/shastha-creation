@@ -332,6 +332,49 @@ section h2 {
 #home .btn:hover {
   background-color: #6B8E23; /* olive green */
 }
+/* =====================
+   MOBILE NAV MENU FIX
+===================== */
+
+@media (max-width: 768px) {
+
+  nav {
+    position: relative;
+  }
+
+  .menu-toggle {
+    display: block;
+    color: #3A3A3A; /* dark so visible */
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    background-color: #FAF7F2; /* cream background */
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border-top: 1px solid #E5E0D8;
+    z-index: 1000;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .nav-menu li {
+    padding: 14px 0;
+    text-align: center;
+  }
+
+  .nav-menu li a {
+    color: #3A3A3A;
+    font-weight: 600;
+  }
+}
+
+
 
 
 
