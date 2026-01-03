@@ -10,29 +10,25 @@
 <body>
 
 <!-- ===== NAVBAR ===== -->
-<nav>
+<nav class="navbar">
   <div class="nav-left">
-    <img src="logo.png" alt="Shastha Creation Logo" class="logo">
+    <img src="logo.png" class="logo" alt="Logo">
     <div>
       <h1>SHASTHA CREATION</h1>
       <p class="tagline">Makes Your Dream Comes True</p>
     </div>
   </div>
 
-  <!-- Hamburger -->
   <div class="hamburger" onclick="toggleMenu()">
-    <span></span>
-    <span></span>
-    <span></span>
+    ☰
   </div>
 
-  <!-- Menu -->
   <ul class="nav-menu" id="navMenu">
-    <li><a href="#home" onclick="toggleMenu()">Home</a></li>
-    <li><a href="#about" onclick="toggleMenu()">About</a></li>
-    <li><a href="#services" onclick="toggleMenu()">Services</a></li>
-    <li><a href="#gallery" onclick="toggleMenu()">Gallery</a></li>
-    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
 
@@ -96,13 +92,17 @@
 <a href="https://wa.me/919538011336" class="whatsapp-float">💬</a>
 
 <script>
-  function toggleMenu() {
-    document.getElementById("navMenu").classList.toggle("active");
-  }
+function toggleMenu() {
+  var menu = document.getElementById("navMenu");
+  menu.style.display =
+    menu.style.display === "block" ? "none" : "block";
+}
 </script>
+
 
 </body>
 </html>
+
 
 
 
